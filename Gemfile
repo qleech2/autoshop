@@ -12,7 +12,7 @@ group :test do
   gem 'capybara', '2.1.0'
 end
 # Use sqlite3 as the database for Active Record
- gem 'sqlite3'
+# gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -41,8 +41,15 @@ group :doc do
 end
 
 group :production do
-  gem 'pg', '0.15.1'
+  gem 'pg'
   gem 'rails_12factor', '0.0.2'
+end
+
+gem 'heroku'
+
+group :development, :test do 
+  gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'sqlite3', '1.3.8'
 end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
