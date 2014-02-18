@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.1.0'
 
-gem 'sqlite3', '1.3.8'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
@@ -13,6 +11,7 @@ end
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
+  gem 'sqlite3', '1.3.8'
 end
 
 group :test do
