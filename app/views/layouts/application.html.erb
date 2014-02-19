@@ -10,23 +10,45 @@
     <![endif]-->
 </head>
 <body>
-<header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="navbar-inner">
-        <div class="container">
-          <%= link_to "sample app", '#', id: "logo" %>
-          <nav>
-            <ul class="nav pull-right">
-              <li><%= link_to "Home",    '#' %></li>
+<!--_____________________________Шапка_________________________________________-->
+
+<div class="row as-header-margin">
+  <header class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 as-navbar-logo">
+            <ul class="nav nav-pills">
+              <li><%= link_to "Nikamotorz", '#', id: "logo" %></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-8 as-navbar-logo">
+            <ul class="nav  nav-pills pull-right">
+              <li class="active"><%= link_to "Home",    '#' %></li>
               <li><%= link_to "Help",    '#' %></li>
               <li><%= link_to "Sign in", '#' %></li>
             </ul>
-          </nav>
+          </div>
         </div>
       </div>
-    </header>
-    <div class="container">
-      <%= yield %>
     </div>
+  </header>
+</div>
+<!--_______________________________Оповещения______________________________-->
+<div class="container">
+  <div class="alert alert-info">
+    <p>Магазин в разработке!</p>
+  </div>
+
+  <div class="alert alert-info visible-xs">
+    <p>Мобильная версия сайта</p>
+  </div>
+</div>
+<!--_______________________________Содержимое страницы______________________-->
+<div class="container">
+  <%= yield %>
+</div>    
 
 </body>
 </html>
