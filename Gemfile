@@ -48,6 +48,8 @@ group :doc do
 end
 
 gem "less", "~> 2.5.0"
+
+gem 'therubyracer'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
