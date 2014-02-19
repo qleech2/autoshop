@@ -7,6 +7,14 @@
 	margin-right: 20px;
 }
 
-.as-navbar-logo {
+.as-header-logo {
 	margin-top: 10px;
+}
+
+.as-header-row {
+	background-color: #3a92c8;
+}
+
+.as-header-links {
+	color: #fff;
 }
